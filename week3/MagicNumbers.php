@@ -7,14 +7,14 @@ Class User
 {
     public static $ps = [1, 2, 3, 4, 5, 6];
 
-    public function obtPerm()
+    public function getPermissions()
     {
         return [2, 4];
     }
 }
 
 //¿Qué es 3?
-if (in_array(3, $u->obtPerm())) {
+if (in_array(3, $u->getPermissions())) {
 
 }
 
